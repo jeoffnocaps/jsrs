@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><rect width="120" height="120" rx="28" fill="#000000"/><text x="60" y="74" font-size="50" text-anchor="middle" font-family="Georgia,serif" font-weight="700" fill="#E1DCC9">JSS</text><path d="M15 96C45 76 75 114 105 82" fill="none" stroke="#412D15" stroke-width="7" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#000000" rx="12"/>
+  <text x="32" y="44" font-family="Georgia, serif" font-size="32" font-weight="900" text-anchor="middle" fill="url(#g)">JS</text>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8CC7A"/>
+      <stop offset="50%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#C4C4D0"/>
+    </linearGradient>
+  </defs>
+</svg>
