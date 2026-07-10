@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio | Jeoffrey Sherren Sarmiento</title>
 <meta name="description" content="Website, system, and VR project portfolio for Jeoffrey Sherren Sarmiento.">
-<link rel="icon" href="./assets/jeoffrey.png" type="image/png">
+<link rel="icon" href="./assets/jsrs-logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
@@ -14,8 +14,7 @@
 
 <header class="nav-bar">
   <a class="brand" href="./index.html">
-    <span class="mark">JS</span>
-    <span>JSRS<br><small>Web Developer</small></span>
+    <img class="brand-logo" src="./assets/jsrs-logo.png" alt="JSRS, Web Developer">
   </a>
   <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
   <nav class="nav-links" aria-label="Main navigation">
@@ -98,6 +97,36 @@
 
   <div class="portfolio-group">
     <div class="group-title">
+      <div><span class="eyebrow">no-code builds</span><h2>Webflow Sites</h2></div>
+      <p>Fast, visually-led builds on Webflow for clients who want a polished launch without a custom back end.</p>
+    </div>
+    <div class="portfolio-grid">
+      <a class="portfolio-card clickable reveal" href="https://webflow.com/design/brightsmile-dental-d26054?utm_medium=project_link&amp;utm_source=designer&amp;utm_content=brightsmile-dental-d26054" target="_blank" rel="noopener">
+        <div class="portfolio-body">
+          <div class="portfolio-top"><h3>BrightSmile Dental</h3><span class="status">Webflow</span></div>
+          <p>Webflow site for a dental practice: service pages, a booking-focused layout, and a clean clinical brand feel.</p>
+          <div class="tag-row"><span class="tag">Webflow</span><span class="tag">Healthcare</span></div>
+        </div>
+      </a>
+      <a class="portfolio-card clickable reveal" href="https://webflow.com/design/coachkai-fitness?utm_medium=project_link&amp;utm_source=designer&amp;utm_content=coachkai-fitness" target="_blank" rel="noopener">
+        <div class="portfolio-body">
+          <div class="portfolio-top"><h3>CoachKai Fitness</h3><span class="status">Webflow</span></div>
+          <p>Webflow site for a fitness coaching brand: program pages, testimonials, and a bold, high-energy look.</p>
+          <div class="tag-row"><span class="tag">Webflow</span><span class="tag">Fitness</span></div>
+        </div>
+      </a>
+      <a class="portfolio-card clickable reveal" href="https://jeoffnocaps.github.io/sparkclean-demo/" target="_blank" rel="noopener">
+        <div class="portfolio-body">
+          <div class="portfolio-top"><h3>SparkClean</h3><span class="status live">Live</span></div>
+          <p>Cleaning service demo site, built static and deployed for a fast, no-nonsense booking-style layout.</p>
+          <div class="tag-row"><span class="tag">Static Site</span><span class="tag">Service Business</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="portfolio-group">
+    <div class="group-title">
       <div><span class="eyebrow">system</span><h2>Internal System Project</h2></div>
       <p>A PHP and MySQL system focused on records, inventory, and print-ready outputs.</p>
     </div>
@@ -143,7 +172,7 @@
 <footer class="footer wrap">
   <div class="footer-top">
     <div>
-      <a class="footer-brand" href="./index.html"><span class="mark">JS</span><span style="font-family:var(--display); font-weight:600; font-size:1.05rem; color:var(--paper);">JSRS</span></a>
+      <a class="footer-brand" href="./index.html"><img class="brand-logo" src="./assets/jsrs-logo.png" alt="JSRS, Web Developer"></a>
       <p>A collection of websites, system projects, and VR project work showing front-end design, back-end logic, and interactive solutions.</p>
     </div>
     <div class="footer-links">
