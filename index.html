@@ -1,165 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio website for Jeoffrey Sherren Sarmiento, web developer focused on clean websites, systems, UI/UX, and VR project support.">
-  <title>JSRS Portfolio | Jeoffrey Sherren Sarmiento</title>
-  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeoffrey Sherren Sarmiento | Web Developer</title>
+<meta name="description" content="Web developer building responsive websites, UI/UX, PHP and MySQL systems, and VR-supported academic projects. Based in the Philippines.">
+<link rel="icon" href="./assets/jeoffrey.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
 </head>
-<body data-page="home">
-  <div class="loader" aria-hidden="true">
-  <div class="loader-content"><b>JSRS</b><span>Designing your first impression</span><i></i></div>
-</div>
-  <header class="header">
-  <a class="brand" href="./index.html" aria-label="JSS home">
-    <img src="./assets/jsrs-logo.png" alt="JSRS logo">
-    <span class="brand-copy"><strong>JSRS</strong><small>Web Developer</small></span>
+<body>
+
+<header class="nav-bar">
+  <a class="brand" href="./index.html">
+    <span class="mark">JS</span>
+    <span>JSRS<br><small>Web Developer</small></span>
   </a>
-  <button class="menu" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  <nav class="nav" aria-label="Main navigation">
-    <a href="./index.html" data-nav="home">Home</a>
-    <a href="./services.html" data-nav="services">Services</a>
-    <a href="./portfolio.html" data-nav="portfolio">Portfolio</a>
-    <a href="./about.html" data-nav="about">About</a>
-    <a href="./contact.html" data-nav="contact">Contact</a>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="./index.html" aria-current="page">Home</a>
+    <a href="./services.html">Services</a>
+    <a href="./portfolio.html">Portfolio</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html">Contact</a>
   </nav>
-  <div class="top-actions">
-    <a class="resume-link" href="./assets/JSarmiento_RESUME.pdf" target="_blank" rel="noopener">Resume</a>
+  <div class="nav-actions">
     <a class="btn btn-primary" href="./contact.html">Hire Me</a>
   </div>
 </header>
-  <main>
 
-<section class="home-hero wrap">
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <span class="small-label">Jeoffrey Sherren Sarmiento</span>
-      <h1>Websites and systems that make your brand look <span class="text-gradient">credible, modern, and hire-worthy.</span></h1>
-      <p class="lead">I build responsive websites, UI/UX layouts, PHP and MySQL systems, and VR-supported academic projects with a clean visual direction, organized code, and client-focused presentation.</p>
+<main>
+
+<section class="hero wrap">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">whoami</span>
+      <h1>Interfaces and systems built to make your brand look credible, modern, and worth hiring.</h1>
+      <p class="lead">I build responsive websites, UI/UX layouts, and PHP/MySQL systems, plus VR-supported academic work. Clean visual direction, organized code, and presentation that actually makes sense to a client.</p>
+      <div class="hero-stats">
+        <div><b>7+</b><span>Website &amp; system projects</span></div>
+        <div><b>PHP</b><span>Database-backed builds</span></div>
+        <div><b>VR</b><span>Interactive capstone work</span></div>
+      </div>
       <div class="hero-actions">
         <a class="btn btn-primary" href="./portfolio.html">View Portfolio</a>
         <a class="btn btn-ghost" href="./services.html">Explore Services</a>
         <a class="btn btn-ghost" href="./assets/JSarmiento_RESUME.pdf" target="_blank" rel="noopener">Open Resume</a>
       </div>
-      <div class="hero-highlights">
-        <div class="highlight-pill"><b>7+</b><span>Website and system projects</span></div>
-        <div class="highlight-pill"><b>PHP</b><span>Database-backed workflows</span></div>
-        <div class="highlight-pill"><b>VR</b><span>Interactive capstone experience</span></div>
+    </div>
+
+    <div class="code-card reveal">
+      <div class="code-card-head">
+        <div class="code-dots"><span></span><span></span><span></span></div>
+        <span class="fname">merak-wellness.html</span>
+        <div class="view-toggle">
+          <button data-view-btn="design" class="active">Design</button>
+          <button data-view-btn="code">Code</button>
+        </div>
+      </div>
+      <div class="code-card-body">
+        <div class="view-pane mock-preview active" data-view-pane="design">
+          <div class="mock-nav"><b>Merak</b><span>Home · Services · Book</span></div>
+          <div class="mock-hero"><span>Rejuvenate, renew, to a better you.</span></div>
+          <div class="mock-row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <span class="mock-btn">Book Now</span>
+        </div>
+        <div class="view-pane code-pane" data-view-pane="code">
+<pre><span class="tag">&lt;section</span> <span class="attr">class</span>=<span class="str">"hero"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;h1&gt;</span>Rejuvenate, renew,
+  to a better you.<span class="tag">&lt;/h1&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"grid"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"card"</span><span class="tag">&gt;&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"card"</span><span class="tag">&gt;&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;button&gt;</span>Book Now<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/section&gt;</span></pre>
+        </div>
       </div>
     </div>
-    <aside class="hero-showcase reveal" aria-label="Portfolio capability preview">
-      <div class="showcase-card showcase-card--main">
-        <div class="showcase-visual">
-          <span class="orb orb-one"></span>
-          <img src="./assets/jsrs-logo.png" alt="JSS logo showcase">
-          <span class="orb orb-two"></span>
-        </div>
-        <div class="showcase-meta">
-          <span>Premium UI</span><span>Mobile-first</span><span>Clean code</span><span>Deploy-ready</span>
-        </div>
-      </div>
-      <div class="availability-card">
-        <b><span class="status-dot"></span>Ready for client projects</b>
-        <p>Focused on websites that look professional, explain your offer clearly, and guide visitors toward action.</p>
-      </div>
-    </aside>
   </div>
 </section>
-<div class="marquee" aria-label="Capabilities moving from right to left">
+
+<div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>Web Development</span><span>UI/UX</span><span>PHP + MySQL</span><span>VR Systems</span><span>Responsive Design</span><span>Technical Support</span>
-    <span>Web Development</span><span>UI/UX</span><span>PHP + MySQL</span><span>VR Systems</span><span>Responsive Design</span><span>Technical Support</span>
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Responsive Design</span><span>UI/UX</span><span>VR Systems</span>
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Responsive Design</span><span>UI/UX</span><span>VR Systems</span>
   </div>
 </div>
+
 <section class="section wrap">
   <div class="section-head">
-    <div><span class="small-label">Why Hire Me</span><h2>Design that looks good, works well, and explains your value fast.</h2></div>
-    <p>I focus on the details clients notice first: layout, speed, readability, mobile responsiveness, smooth animation, and clear sections that help visitors understand what you offer.</p>
+    <div><span class="eyebrow">why hire me</span><h2>Design that looks good, works well, and explains your value fast.</h2></div>
+    <p>I focus on the details clients notice first: layout, speed, readability, mobile responsiveness, and sections that actually explain what you offer.</p>
   </div>
-  <div class="grid-3">
-    <article class="panel value-card reveal"><span class="icon">01</span><h3>Professional first impression</h3><p>Modern visuals, polished spacing, smooth hover effects, and consistent components make your website feel trustworthy from the first scroll.</p></article>
-    <article class="panel value-card reveal"><span class="icon">02</span><h3>Clear client journey</h3><p>Pages are structured to explain your services, show proof of work, and move visitors toward contacting or hiring you.</p></article>
-    <article class="panel value-card reveal"><span class="icon">03</span><h3>Responsive and maintainable</h3><p>Layouts are designed for desktop and mobile with reusable CSS, organized sections, and cleaner files that are easier to update.</p></article>
+  <div class="card-grid">
+    <article class="card reveal">
+      <span class="num">01</span>
+      <h3>Professional first impression</h3>
+      <p>Modern visuals, polished spacing, and consistent components. The kind of details that make a site feel trustworthy on the first scroll.</p>
+    </article>
+    <article class="card reveal">
+      <span class="num">02</span>
+      <h3>Clear client journey</h3>
+      <p>Pages built to explain your services, show proof of work, and move visitors toward actually contacting you.</p>
+    </article>
+    <article class="card reveal">
+      <span class="num">03</span>
+      <h3>Responsive and maintainable</h3>
+      <p>Built for desktop and mobile with reusable CSS and organized files, so future updates don't turn into a rebuild.</p>
+    </article>
   </div>
 </section>
+
 <section class="section wrap section-tight">
   <div class="section-head">
-    <div><span class="small-label">Services Snapshot</span><h2>What I can build for you.</h2></div>
-    <p>From a simple portfolio to a business website or database-backed system, I can help turn the idea into a clean and working digital product.</p>
+    <div><span class="eyebrow">services snapshot</span><h2>What I can build for you.</h2></div>
+    <p>From a simple portfolio to a full business site or a database-backed system, I can help turn the idea into something that actually works.</p>
   </div>
-  <div class="grid-4">
-    <article class="panel service-card reveal"><span class="num">01</span><h3>Business Websites</h3><p>Landing pages, portfolios, service pages, healthcare, wellness, beauty, and brand websites.</p></article>
-    <article class="panel service-card reveal"><span class="num">02</span><h3>UI/UX Polish</h3><p>Cleaner spacing, better navigation, stronger sections, readable content, and modern visual direction.</p></article>
-    <article class="panel service-card reveal"><span class="num">03</span><h3>PHP/MySQL Systems</h3><p>Record management, dashboards, inventory, reports, authentication, and internal workflows.</p></article>
-    <article class="panel service-card reveal"><span class="num">04</span><h3>Project Support</h3><p>Technical support for capstone systems, VR project flow, debugging, and deployment preparation.</p></article>
+  <div class="card-grid cols-4">
+    <a class="card reveal" href="./services.html">
+      <span class="num">01</span>
+      <h3>Business Websites</h3>
+      <p>Landing pages, portfolios, and service sites for healthcare, wellness, beauty, and brand clients.</p>
+    </a>
+    <a class="card reveal" href="./services.html">
+      <span class="num">02</span>
+      <h3>UI/UX Polish</h3>
+      <p>Better navigation, stronger sections, and a visual direction that doesn't look like a template.</p>
+    </a>
+    <a class="card reveal" href="./services.html">
+      <span class="num">03</span>
+      <h3>PHP/MySQL Systems</h3>
+      <p>Record management, dashboards, inventory, reports, and internal workflows that don't break under real use.</p>
+    </a>
+    <a class="card reveal" href="./services.html">
+      <span class="num">04</span>
+      <h3>Project Support</h3>
+      <p>Technical support for capstone systems, VR project flow, debugging, and getting a build ready to deploy.</p>
+    </a>
   </div>
 </section>
+
 <section class="section wrap section-tight">
   <div class="section-head">
-    <div><span class="small-label">Featured Work</span><h2>Selected projects with practical use cases.</h2></div>
-    <p>These projects show experience across e-commerce, wellness websites, healthcare content, internal systems, and immersive learning.</p>
+    <div><span class="eyebrow">featured work</span><h2>Selected projects with practical use cases.</h2></div>
+    <p>E-commerce, wellness, healthcare, internal systems, and a capstone VR build. The full list is on the portfolio page.</p>
   </div>
-  <div class="featured-grid">
+  <div class="portfolio-grid">
     <a class="portfolio-card clickable reveal" href="https://infinitebeautyraquel.com/" target="_blank" rel="noopener">
-      <div class="portfolio-img"><img src="./assets/ib.png" alt="Infinite Beauty Raquel website screenshot" loading="lazy"></div>
-      <div class="portfolio-body"><div class="portfolio-top"><h3>Infinite Beauty Raquel</h3><span class="status">Live</span></div><p>Infinite Beauty Raquel is a modern beauty and self-care website designed to represent elegance, confidence, and professionalism through a clean and visually appealing digital experience. The website highlights the brand’s beauty services in a soft, feminine, and organized layout, making it easy for visitors to explore what the business offers. Every section is designed to create a welcoming feeling, from the smooth navigation and polished visuals to the carefully arranged service information that helps clients understand the value of each treatment.</p><div class="tag-row"><span class="tag">E-commerce</span><span class="tag">Responsive</span><span class="tag">UI/UX</span></div></div>
+      <div class="portfolio-img"><img src="./assets/ib.jpg" alt="Infinite Beauty Raquel website screenshot" loading="lazy"></div>
+      <div class="portfolio-body">
+        <div class="portfolio-top"><h3>Infinite Beauty Raquel</h3><span class="status live">Live</span></div>
+        <p>Beauty and self-care e-commerce site, front to back, built to feel elegant without feeling stiff.</p>
+        <div class="tag-row"><span class="tag">E-commerce</span><span class="tag">Responsive</span></div>
+      </div>
     </a>
     <article class="portfolio-card reveal">
       <div class="portfolio-img"><img src="./assets/borrower-system.jpg" alt="Borrower system screenshot" loading="lazy"></div>
-      <div class="portfolio-body"><div class="portfolio-top"><h3>Automated Borrower’s Equipment Application</h3><span class="status private">Preview</span></div><p>PHP and MySQL system for borrowing records, inventory monitoring, notifications, settings, and printable borrower slips.</p><div class="tag-row"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Reports</span></div></div>
+      <div class="portfolio-body">
+        <div class="portfolio-top"><h3>Automated Borrower's Equipment Application</h3><span class="status">Preview</span></div>
+        <p>PHP and MySQL system for borrowing records, inventory, notifications, and printable slips.</p>
+        <div class="tag-row"><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+      </div>
     </article>
     <article class="portfolio-card reveal">
       <div class="portfolio-img"><img src="./assets/pia-capstone.jpg" alt="Pottery Immersive Atelier VR project screenshot" loading="lazy"></div>
-      <div class="portfolio-body"><div class="portfolio-top"><h3>Pottery Immersive Atelier</h3><span class="status private">Capstone</span></div><p>VR educational game with tutorial flow, quest mode, pottery interaction, grading, feedback, and immersive learning logic.</p><div class="tag-row"><span class="tag">Unity</span><span class="tag">VR</span><span class="tag">Interactive</span></div></div>
+      <div class="portfolio-body">
+        <div class="portfolio-top"><h3>Pottery Immersive Atelier</h3><span class="status">Capstone</span></div>
+        <p>VR educational game with a tutorial flow, quest mode, and a grading and feedback system.</p>
+        <div class="tag-row"><span class="tag">Unity</span><span class="tag">VR</span></div>
+      </div>
     </article>
   </div>
 </section>
+
 <section class="section wrap section-tight">
   <div class="section-head">
-    <div><span class="small-label">Workflow</span><h2>A straightforward process from idea to upload.</h2></div>
-    <p>Every project is built with a clear structure, consistent styling, responsive checks, and files prepared for hosting.</p>
+    <div><span class="eyebrow">workflow</span><h2>A straightforward process from idea to upload.</h2></div>
+    <p>Every project gets a clear structure, consistent styling, and a responsive check before it ships.</p>
   </div>
-  <div class="grid-3">
-    <article class="panel process-card reveal"><span class="step">01</span><h3>Plan the content</h3><p>Define the pages, sections, target users, key message, assets, links, and important functions.</p></article>
-    <article class="panel process-card reveal"><span class="step">02</span><h3>Design and build</h3><p>Create clean layouts, reusable CSS, smooth interactions, responsive behavior, and project-specific features.</p></article>
-    <article class="panel process-card reveal"><span class="step">03</span><h3>Test and deploy</h3><p>Prepare the final files, check mobile layout, fix paths, and make the project ready for upload.</p></article>
-  </div>
-</section>
-<section class="section wrap section-tight">
-  <div class="resume-panel reveal">
-    <div><span class="small-label">Let’s Work</span><h2>Need a website that makes clients trust you faster?</h2><p>I can help you present your service, showcase your work, and create a smoother path from visitor to inquiry.</p></div>
-    <a class="btn btn-primary" href="./contact.html">Start a Project</a>
+  <div class="process">
+    <div class="process-row reveal"><span class="step">01</span><h4>Plan the content</h4><p>Pages, sections, target users, key message, assets, and the functions that actually matter.</p></div>
+    <div class="process-row reveal"><span class="step">02</span><h4>Design and build</h4><p>Clean layouts, reusable CSS, smooth interactions, and whatever project-specific features it needs.</p></div>
+    <div class="process-row reveal"><span class="step">03</span><h4>Test and deploy</h4><p>Final files, mobile check, path fixes, and getting the project actually ready for upload.</p></div>
   </div>
 </section>
-  </main>
-  <footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <a class="footer-logo" href="./index.html"><img src="./assets/jsrs-logo.png" alt="JSRS logo"><b>JSRS Portfolio</b></a>
-        <p class="footer-text">Digital services focused on responsive websites, premium interface design, practical PHP/MySQL systems, and interactive project support.</p>
-      </div>
-      <div class="footer-links">
-        <div>
-          <h4>Pages</h4>
-          <a href="./index.html">Home</a>
-          <a href="./services.html">Services</a>
-          <a href="./portfolio.html">Portfolio</a>
-          <a href="./about.html">About</a>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <a href="mailto:Jeoffreysherren01@gmail.com">Jeoffreysherren01@gmail.com</a>
-          <a href="tel:+639245794150">+63 924 579 4150</a>
-          <a href="./assets/JSarmiento_RESUME.pdf" target="_blank" rel="noopener">View Resume</a>
-        </div>
-      </div>
+
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow" style="justify-content:center;">let's talk</span>
+    <h2>Need a website that makes clients trust you faster?</h2>
+    <p>I can help you present your service, show your work, and shorten the path from visitor to inquiry.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="./contact.html">Start a Project</a>
     </div>
-    <div class="copyright"><span>&copy; 2026 Jeoffrey Sherren Sarmiento.</span><span>Built with consistent design, clean structure, and responsive styling.</span></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer wrap">
+  <div class="footer-top">
+    <div>
+      <a class="footer-brand" href="./index.html"><span class="mark">JS</span><span style="font-family:var(--display); font-weight:600; font-size:1.05rem; color:var(--paper);">JSRS</span></a>
+      <p>Digital services focused on responsive websites, practical PHP/MySQL systems, and interactive project support.</p>
+    </div>
+    <div class="footer-links">
+      <h5>pages</h5>
+      <a href="./index.html">Home</a>
+      <a href="./services.html">Services</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <div class="footer-links">
+      <h5>contact</h5>
+      <a href="mailto:Jeoffreysherren01@gmail.com">Jeoffreysherren01@gmail.com</a>
+      <a href="tel:+639245794150">+63 924 579 4150</a>
+      <a href="./assets/JSarmiento_RESUME.pdf" target="_blank" rel="noopener">View Resume</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Jeoffrey Sherren Sarmiento.</span>
+    <span>Philippines</span>
   </div>
 </footer>
-  <script src="./script.js"></script>
+
+<script src="./script.js"></script>
 </body>
 </html>
